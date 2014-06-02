@@ -1,0 +1,207 @@
+/* 
+    Created on : May 27, 2014, 10:15:58 AM
+    Author     : Ícone
+*/
+
+/* Cores do tema
+
+cor 		rgb			hex
+
+Roxo		42 19 55		2A1337
+Vermelho	237 26 58		ED1A3A
+Amarelo		247 236 0		F7EC00
+Azul		0 174 239		00AEEF
+Branco		255 255 255		FFFFFF
+Cinza 		242 242 242		F2F2F2
+
+*/
+
+        /***AJUSTES GERAIS***/
+
+
+/* Removendo espaços em branco (espaçamentos) e setando a largura das bordas de todo os elementos */
+*{  
+    padding:0;
+    margin:0;
+    border-width: 1px;
+}
+
+/* Definindo fontes personalizadas */
+@font-face
+{
+    font-family:Code-Light;
+    src: url(fonts/CODE_Light.otf);
+}
+@font-face
+{
+    font-family:Code-Bold;
+    src: url(fonts/CODE_Bold.otf);
+}
+@font-face
+{
+    font-family: Billabong;
+    src: url(fonts/Billabong.ttf);
+}
+
+/* Ocultando scrollbar (apenas chrome) */
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+        /*** ESTILO DO MENU ***/
+
+#menu {
+    width: 100%;
+    height: 15%;
+    position: fixed;
+    text-align: center;
+    font-size: 100%;
+    border-bottom-style: solid;
+    font-family: Code-Light;
+    background-color: #FFFFFF;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+/* Estilo da logo */
+
+#menu .logo {
+    top: 2%;
+    position: fixed;
+    left: 13%;
+    height: 10%;
+    width: 10%;
+}
+
+/* Estilo da lista dos links de navegação */
+
+#menu ul{
+    left: 17%;
+    top: 40%;
+    width: 80%;
+    position: relative;
+    height: auto;
+    -webkit-animation: fade 4s;
+    animation: fade 4s;
+}
+
+#menu li{
+    display: inline;
+    padding: 1%;
+
+}
+
+#menu .nav_link {
+    text-decoration: none;
+    color: #2A1337;
+    cursor: pointer;
+}
+
+#menu .nav_link:hover {
+    color: #ED1A3A;
+    font-weight: bold; 
+}
+
+        /*** ESTILO DO FOOTER ***/
+        
+#footer{
+    top: 90%;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    border-top-style: solid;
+}
+
+        /*** ESTILO DO FRAME DE CONTEUDO ***/
+        
+#content-frame{
+    top: 15%;
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    opacity: 0.9;
+    -webkit-animation: fade 2s;
+    animation: fade 2s;
+}
+
+        /*** ESTILO DA PAGINA "LOCAL" ***/
+        
+#local{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/em_breve.png');
+    background-size: 100% 100%;
+}
+
+        /*** ESTILO DA PAGINA "FAQ" ***/
+        
+#faq{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/em_breve.png');
+    background-size: 100% 100%;
+}
+
+        /*** ESTILO ÁREA DO CONGRESSISTA ***/
+
+#area-do-congressista{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/em_breve.png');
+    background-size: 100% 100%;
+}
+    
+    /*** ESTILO DA ÁREA PROGRAMAÇÃO ***/
+    
+ #programacao{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/em_breve.png');
+    background-size: 100% 100%;
+}
+
+    /***  ESTILO DA ABA DE CONTATO ***/
+    
+.formulario{
+    font-family: billabong;
+    position: absolute;
+    height: auto;
+    left: 25%;
+    top: 10%;
+    width: 50%;
+    text-align: center;
+    font-size: 120%;
+    background: #2A1337;
+    color: #FFFFFF;
+}
+
+.btn-contato-enviar, .btn-contato-reset{
+    background-color: #ED1A3A;
+    min-width: 15%;
+    padding: 3%;
+    font-family: billabong;
+    font-size: 100%;
+}
+
+.btn-contato-enviar:hover, .btn-contato-reset:hover{
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.formulario textarea, .formulario input{
+    position: relative;
+    max-width: 90%;
+    border: none;
+}
+
+.formulario .title{
+    font-family: Code-Light;
+    top: 10%;
+    font-size: 150%;
+}

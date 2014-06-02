@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <head>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="description" content="Site ENEEJ 2014">
+        <meta name="keywords" content="ENEEJ, MEJ, Alagoas, FEJEA, Brasil Junior">
+        <meta name="Ícone" content="Hege Refsnes">
+    </head>
+
+    
+   
+    <body>
+        <div id="menu">
+		<ul>
+                    <li><a href="index.html"><img src="images/logo-eneej.png" class="logo"></img></a></li>
+                    <li><a class="nav_link" onclick="changeContent('about.html')">O Evento</a></li>
+                    <li><a class="nav_link" onclick="changeContent('pages/programacao.html')">Programa&ccedil;&atilde;o</a></li>
+                    <li><a class="nav_link" onclick="changeContent('pages/area-do-congressista.html')">&Aacute;rea do Congressista</a></li>
+                    <li><a class="nav_link" onclick="changeContent('pages/local.html')">Local</a></li>
+                    <li><a class="nav_link" onclick="changeContent('pages/contato.html')">Contato</a></li>
+                    <li><a class="nav_link" onclick="changeContent('pages/faq.html')">FAQ</a></li>
+                    <li><a class="nav_link" onclick="changeContent('http://testeblogeneej.blogspot.com.br/p/sobre-o-eneej.html')">Noticias</li>
+		</ul>
+	</div>
+        
+        <iframe src="home.html" id="content-frame"></iframe>
+        
+        <div id="footer"></div>
+        
+        
+    </body>
+</html>
