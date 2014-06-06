@@ -49,6 +49,18 @@ Cinza 		242 242 242		F2F2F2
     display: none; 
 }
 
+/* Definição de efeitos de animação */
+
+@-webkit-keyframes fade{
+    from{ opacity: 0;}
+    to{opacity: 0.8;}
+}
+
+@keyframes fade{
+    from{ opacity: 0;}
+    to{opacity: 0.8;}
+}
+
         /*** ESTILO DO MENU ***/
 
 #menu {
@@ -122,9 +134,58 @@ Cinza 		242 242 242		F2F2F2
     height: 75%;
     position: absolute;
     opacity: 0.9;
-    
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
 }
 
+        /*** ESTILO DA PAGINA HOME ***/
+        
+#banners-menu{
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    height: auto;
+    width: 10%;
+    min-width: 100px;
+    text-align: center;
+    z-index: 1;
+}
+
+#banners-menu ul{
+    position: absolute;
+    width: 100%;
+}
+
+#banners-menu li{
+    display: inline;
+    padding: 2%;
+}
+
+#banners-menu .button{
+    color: #FFFFFF;
+    position: relative;
+    background-color: #2A1337;
+    padding: 6%;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    opacity: 0.7;
+}
+
+#banners-menu .button:hover{
+    background-color: #7F9DB9;
+    cursor: pointer;
+}
+
+#home iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    background: #F2F2F2;
+}
         /*** ESTILO DA PAGINA "LOCAL" ***/
         
 #local{
@@ -205,3 +266,42 @@ Cinza 		242 242 242		F2F2F2
     top: 10%;
     font-size: 150%;
 }
+
+/** Adequação de estilo para resoluções menores **/
+
+/* Telas com até 1024px de largura (tablets) */
+@media screen and (max-width: 1024px){
+/* Estilo do menu*/
+#menu{
+    font-size: 90%;
+}
+
+#menu .logo{
+    left: 2%;
+}
+
+#menu ul{
+    left: 10%;
+    width: 90%;
+}
+}
+
+
+/* Telas com até 480px de largura (smartphones) */
+@media screen and (max-width: 480px){
+/* Estilo do menu*/
+#menu{
+    font-size: 50%;
+}
+
+#menu .logo{
+    left: 2%;
+}
+
+#menu ul{
+    left: 10%;
+    width: 90%;
+}
+
+}
+

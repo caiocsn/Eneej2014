@@ -39,6 +39,7 @@ function changeContent(loc){
 		});
 	}
 
+/* Função que faz o efeito "slide" */
 function changeContentSlide(loc){
 			
 			$('iframe').delay(200).animate({ "left": "-80%" }, "slow", function(){
@@ -47,3 +48,24 @@ function changeContentSlide(loc){
 			$('iframe').delay(200).animate({ "left": "10%" }, "slow" );;
 		});
 	}
+function changeBannerSlide(loc){
+			
+			$('iframe').delay(100).animate({ "left": "-100%" }, "slow", function(){
+			document.getElementById("banners-frame").src= loc;
+			document.getElementById("banners-frame").style.left = "100%";
+			$('iframe').delay(100).animate({ "left": "0" }, "slow" );;
+		});
+	}
+
+var banners = ["contato.html","zz","zzz"];
+var index = 0;
+
+function passBanners(){
+        if( !$('iframe').is(':hover') ){
+        changeBannerSlide(banners[index]);
+        index += 1;
+        if(index > 2)
+            index = 0;
+    }
+        setTimeout(passBanners, 10000);
+}
